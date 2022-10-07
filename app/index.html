@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draws</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <a class="logo__link" href="">
+                        CHAMPION
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="draws">
+                <div class="container">
+                    <div class="draws__head">
+                        <div class="draws__inputs">
+                            <textarea class="draws__input" placeholder="Имя Фаимилия" name="" id="" cols="30"></textarea>
+                        </div>
+
+                        <div class="draws__btns">
+                            <button onclick="generation()" class="draws__btn draws-generation__btn">Сгенерировать сетку</button>
+                        </div>
+                    </div>
+
+                    <div class="draws__content">
+                        <h1 class="draws__title">
+                            First Pool
+                        </h1>
+
+                        <div class="draws__body">
+                            <div class="draws__lap">
+                                <div class="draws__list draws__list-firsLap">
+                                    <div class="draws__item firsLap__item"></div>
+                                    <div class="draws__item firsLap__item"></div>
+                                    <div class="draws__item firsLap__item"></div>
+                                    <div class="draws__item firsLap__item"></div>
+                                    <div class="draws__item firsLap__item"></div>
+                                    <div class="draws__item firsLap__item"></div>
+                                    <div class="draws__item firsLap__item"></div>
+                                    <div class="draws__item firsLap__item"></div>
+                                </div>
+                            </div>
+                            <div class="draws__lap">
+                                <ul class="draws__list draws__list-secondeLap">
+                                    <li class="draws__item"></li>
+                                    <li class="draws__item"></li>
+                                    <li class="draws__item"></li>
+                                    <li class="draws__item"></li>
+                                </ul>
+                            </div>
+                            <div class="draws__lap">
+                                <ul class="draws__list draws__list-thirdLap">
+                                    <li class="draws__item"></li>
+                                    <li class="draws__item"></li>
+                                </ul>
+                            </div>
+                            <div class="draws__lap">
+                                <ul class="draws__list draws__list-fourthLap">
+                                    <li class="draws__item"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+    </div>
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
