@@ -90,14 +90,11 @@ body {
     }
 
     &__list-firsLap {
-        & div {
+        & li {
             margin-bottom: 24px;
         }
 
-        & .draws__item:nth-child(2),
-        & .draws__item:nth-child(4),
-        & .draws__item:nth-child(6),
-        & .draws__item:nth-child(8) {
+        & .draws__item:nth-child(even){
             position: relative;
 
             &::before {
@@ -111,10 +108,7 @@ body {
             }
         }
 
-        & .draws__item:nth-child(1),
-        & .draws__item:nth-child(3),
-        & .draws__item:nth-child(5),
-        & .draws__item:nth-child(7){
+        & .draws__item:nth-child(odd){
             position: relative;
 
             &::before {
@@ -131,12 +125,11 @@ body {
     }
 
     &__list-secondeLap{
-        & li + li{
-            margin-top: 95px;
-        }
+        display: flex;
+        flex-direction: column;
+        gap: 95px;
 
-        & .draws__item:nth-child(1),
-        & .draws__item:nth-child(3){
+        & .draws__item:nth-child(odd){
             position: relative;
 
             &::before {
@@ -149,8 +142,7 @@ body {
                 background-color: $grey;
             }
         }
-        & .draws__item:nth-child(2),
-        & .draws__item:nth-child(4){
+        & .draws__item:nth-child(even){
             position: relative;
 
             &::before {
@@ -170,7 +162,7 @@ body {
             margin-top: 246px;
         }
 
-        & .draws__item:nth-child(1){
+        & .draws__item:nth-child(odd){
             position: relative;
 
             &::before {
@@ -183,7 +175,7 @@ body {
                 background-color: $grey;
             }
         }
-        & .draws__item:nth-child(2){
+        & .draws__item:nth-child(even){
             position: relative;
 
             &::before {
